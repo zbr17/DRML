@@ -16,8 +16,8 @@ import numpy as np
 import torch
 import time
 
-from thudml.launcher.creators import ConfigHandler
-from thudml.launcher.misc import utils
+from gedml.launcher.creators import ConfigHandler
+from gedml.launcher.misc import utils
 
 from source import models
 from source import collectors

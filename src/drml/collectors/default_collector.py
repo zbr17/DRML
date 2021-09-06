@@ -1,4 +1,4 @@
-from thudml.core.collectors import BaseCollector
+from gedml.core.collectors import BaseCollector
 
 class DefaultCollector(BaseCollector):
     """

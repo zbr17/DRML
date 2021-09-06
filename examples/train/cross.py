@@ -16,8 +16,8 @@ import numpy as np
 import torch
 import time
 
-from thudml.launcher.creators import ConfigHandler
-from thudml.launcher.misc import utils
+from gedml.launcher.creators import ConfigHandler
+from gedml.launcher.misc import utils
 
 from src import models
 from src import collectors
@@ -113,7 +113,7 @@ save_path_list = [
     save_path + "_split_{}".format(idx)
     for idx in range(n_split)
 ]
-from thudml.core.samplers import MPerClassFullSampler
+from gedml.core.samplers import MPerClassFullSampler
 
 for idx, (train_split, test_split) in enumerate(KFold(n_splits=n_split).split(total_index)):
     logging.info("Split: {}".format(idx))

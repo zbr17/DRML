@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn 
 import torch.nn.functional as F
 
-from thudml.core.modules import WithRecorder
+from gedml.core.modules import WithRecorder
 
 class MultiEmbedder(WithRecorder):
     def __init__(

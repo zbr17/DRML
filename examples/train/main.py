@@ -12,9 +12,9 @@ import logging
 import argparse
 import time
 
-from thudml.launcher.creators import ConfigHandler
-from thudml.launcher.misc import utils
-from thudml.launcher.misc import ParserWithConvert
+from gedml.launcher.creators import ConfigHandler
+from gedml.launcher.misc import utils
+from gedml.launcher.misc import ParserWithConvert
 
 from src.drml import models
 from src.drml import losses

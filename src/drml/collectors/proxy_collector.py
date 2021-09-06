@@ -1,6 +1,6 @@
 import torch
 import math
-from thudml.core.collectors import BaseCollector
+from gedml.core.collectors import BaseCollector
 
 class ProxyCollector(BaseCollector):
     def __init__(

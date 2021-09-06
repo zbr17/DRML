@@ -1,5 +1,5 @@
 import torch
-from thudml.core.losses import BaseLoss
+from gedml.core.losses import BaseLoss
 import torch.nn.functional as F 
 
 class ZeroLoss(BaseLoss):

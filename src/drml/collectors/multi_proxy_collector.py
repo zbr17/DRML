@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn 
 import math
 
-from thudml.core.collectors import BaseCollector
+from gedml.core.collectors import BaseCollector
 
 class MultiProxyCollector(BaseCollector):
     def __init__(

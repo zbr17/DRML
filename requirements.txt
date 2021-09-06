@@ -10,4 +10,4 @@ scikit-learn==0.24.1
 tensorboard==2.4.0
 wandb==0.10.22
 faiss-gpu==1.5.3
-thudml==0.0.0
+gedml==0.0.0
