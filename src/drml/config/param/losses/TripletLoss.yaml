@@ -1,0 +1,3 @@
+TripletLoss:
+  params:
+    margin: 1 

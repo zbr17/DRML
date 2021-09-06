@@ -1,0 +1,14 @@
+input: [features, labels]
+map:
+  collectors/ensemble/:
+    embeddings: 0
+    labels: 1
+  collectors/repre/loss_repre:
+    embeddings: 2
+    labels: 3
+  FINISH/default/loss_repre:
+    weight: 4
+  FINISH/default/loss_recon:
+    loss: 5
+    weight: 6
+  

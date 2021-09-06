@@ -1,0 +1,10 @@
+CUB200:
+  params:
+    root: /home/zbr/datasets/cub200
+    phase: train
+    assert_num_classes: 100
+    assert_num_samples: 5864
+    transform:
+      - ~~_SEARCH_WITH_SAME_NAME_
+      - transforms
+      - none

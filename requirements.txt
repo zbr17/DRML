@@ -1,0 +1,13 @@
+numpy==1.19.2
+torch==1.7.0
+torchvision==0.8.0
+libtmux==0.8.5
+pretrainedmodels==0.7.4
+tqdm==4.59.0
+pandas==1.1.3
+scipy==1.5.4
+scikit-learn==0.24.1
+tensorboard==2.4.0
+wandb==0.10.22
+faiss-gpu==1.5.3
+thudml==0.0.0

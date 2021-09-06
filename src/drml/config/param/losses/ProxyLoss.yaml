@@ -1,0 +1,3 @@
+ProxyLoss:
+  params:
+    gamma: 10

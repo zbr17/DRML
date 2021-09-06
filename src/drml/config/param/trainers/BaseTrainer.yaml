@@ -1,0 +1,9 @@
+BaseTrainer: 
+  params:
+    batch_size: 150
+    wrapper_params:
+      - ~~_PASS_WITH_WRAPPER_DICT_
+      - null
+      - null
+    freeze_trunk_batchnorm: true
+    dataset_num_workers: 8

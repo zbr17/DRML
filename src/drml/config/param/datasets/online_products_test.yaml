@@ -1,0 +1,10 @@
+OnlineProducts:
+  params:
+    root: /home/zbr/datasets/online_products
+    phase: test
+    assert_num_classes: 11316
+    assert_num_samples: 60502
+    transform:
+      - ~~_SEARCH_WITH_SAME_NAME_
+      - transforms
+      - none

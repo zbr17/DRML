@@ -1,0 +1,4 @@
+resnet50:
+  params:
+    pretrained: imagenet
+  INITIATE: delete_last_linear

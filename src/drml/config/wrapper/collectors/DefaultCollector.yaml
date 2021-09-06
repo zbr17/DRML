@@ -1,0 +1,7 @@
+input: [data, embeddings, labels]
+map:
+  selectors/loss/:
+    metric_mat: 0
+    row_labels: 1
+    col_labels: 2
+    is_same_source: 3

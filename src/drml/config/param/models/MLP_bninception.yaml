@@ -1,0 +1,5 @@
+MLP:
+  params:
+    first_relu: false
+    layer_size_list: [1024, null]
+    output_dim: 512

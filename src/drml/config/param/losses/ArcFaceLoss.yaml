@@ -1,0 +1,4 @@
+ArcFaceLoss:
+  params:
+    margin: 28.6
+    scale: 64

@@ -1,0 +1,16 @@
+train_transforms:
+  params:
+    model_properties:
+      - ~~_SEARCH_WITH_TARGET_NAME_
+      - models
+      - trunk
+    compose_list:
+      - Resize:
+          size: 256
+      - RandomResizedCrop:
+          ratio: [0.75, 1.33]
+          scale: [0.16, 1]
+          size: 227
+      - RandomHorizontalFlip: 
+          p: 0.5
+    wrapper: DefaultTransformWrapper

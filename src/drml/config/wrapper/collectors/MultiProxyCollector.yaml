@@ -1,0 +1,22 @@
+input: [data, embeddings, labels]
+map:
+  selectors/loss1/loss_split_1:
+    metric_mat: 0
+    row_labels: 1
+    col_labels: 2
+    is_same_source: 3
+  selectors/loss2/loss_split_2:
+    metric_mat: 4
+    row_labels: 5
+    col_labels: 6
+    is_same_source: 7
+  selectors/loss3/loss_split_3:
+    metric_mat: 8
+    row_labels: 9
+    col_labels: 10
+    is_same_source: 11
+  selectors/loss4/loss_split_4:
+    metric_mat: 12
+    row_labels: 13
+    col_labels: 14
+    is_same_source: 15

@@ -1,0 +1,4 @@
+input: [metric_mat, row_labels, col_labels, indices_tuple, weights, is_same_source]
+map:
+  FINISH/default/:
+    loss: 0

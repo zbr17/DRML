@@ -1,0 +1,12 @@
+eval_transforms:
+  params:
+    model_properties:
+      - ~~_SEARCH_WITH_TARGET_NAME_
+      - models
+      - trunk
+    compose_list:
+      - Resize:
+          size: 256
+      - CenterCrop:
+          size: 227
+    wrapper: DefaultTransformWrapper

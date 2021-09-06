@@ -1,0 +1,10 @@
+ImageNet:
+  params:
+    root: /home/zbr/datasets/imagenet
+    phase: train
+    assert_num_classes: 1000
+    assert_num_samples: 1281167
+    transform:
+      - ~~_SEARCH_WITH_SAME_NAME_
+      - transforms
+      - none

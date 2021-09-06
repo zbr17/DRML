@@ -1,0 +1,7 @@
+BaseRecorder:
+  params:
+    project_name: relational-DML
+    root: /home/zbr/experiments/relational_dml/test
+    delete_old_folder: true
+    hint_if_exist: true
+    is_resume: false

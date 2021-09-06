@@ -1,0 +1,5 @@
+MultiSimilarityLoss:
+  params:
+    alpha: 2
+    beta: 50
+    base: 0.5

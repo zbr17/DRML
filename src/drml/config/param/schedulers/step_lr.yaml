@@ -1,0 +1,8 @@
+StepLR:
+  params:
+    optimizer:
+      - ~~_SEARCH_WITH_SAME_NAME_
+      - optimizers
+      - none
+    step_size: 5
+    gamma: 0.5

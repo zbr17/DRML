@@ -1,0 +1,10 @@
+Cars196:
+  params:
+    root: /home/zbr/datasets/cars196
+    phase: test
+    assert_num_classes: 98
+    assert_num_samples: 8131
+    transform:
+      - ~~_SEARCH_WITH_SAME_NAME_
+      - transforms
+      - none

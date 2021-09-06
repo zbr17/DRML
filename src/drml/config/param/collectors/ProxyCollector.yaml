@@ -1,0 +1,8 @@
+ProxyCollector:
+  params:
+    metric: 
+      - ~~_SEARCH_WITH_TARGET_NAME_
+      - metrics
+      - default
+    num_classes: 100
+    embeddings_dim: 512
