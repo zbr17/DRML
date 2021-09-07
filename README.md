@@ -1,6 +1,6 @@
 # Deep Relational Metric Learning
 
-This repository is the official PyTorch implementation of **Deep Relational Metric Learning**. 
+This repository is the official PyTorch implementation of **Deep Relational Metric Learning** built on [GeDML](https://github.com/zbr17/GeDML).
 
 ## Framework
 
