@@ -1,9 +1,0 @@
-MultiProxyCollector:
-  params:
-    metric: 
-      - ~~_SEARCH_WITH_TARGET_NAME_
-      - metrics
-      - default
-    num_classes: 100
-    embedding_size: 128
-    proxy_group: 4

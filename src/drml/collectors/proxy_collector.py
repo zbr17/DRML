@@ -31,7 +31,7 @@ class ProxyCollector(BaseCollector):
         self.register_buffer("proxy_labels", proxy_labels)
         torch.nn.init.kaiming_uniform_(self.proxies, a=math.sqrt(5))
     
-    def forward(self, data, embeddings, labels) -> tuple:
+    def forward(self, embeddings, labels) -> tuple:
         """
         Compute similarity (or distance) matrix between embeddings and proxies.
         """

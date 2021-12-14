@@ -1,4 +1,0 @@
-ProxyAnchorLoss:
-  params:
-    margin: 0.1
-    alpha: 32

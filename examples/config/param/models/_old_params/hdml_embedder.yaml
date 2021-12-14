@@ -1,0 +1,5 @@
+BatchNormMLP:
+  layer_size_list: [1024, 512]
+  first_bn: ture
+  relu_list: [false]
+  bn_list: [false]

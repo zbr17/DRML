@@ -1,0 +1,11 @@
+HDMLCollector:
+  metric: [~~_SEARCH_WITH_TARGET_NAME_, metrics, default]
+  generator: [~~_SEARCH_WITH_TARGET_NAME_, models, generator]
+  embedder: [~~_SEARCH_WITH_TARGET_NAME_, models, embedder_recon]
+  classifier: [~~_SEARCH_WITH_TARGET_NAME_, models, classifier]
+  alpha: 90.0
+  beta: 1.0e+4
+  coef_lambda: 0.5
+  soft_weight: 1.0e+4
+  d_plus_scheme: positive_distance
+  d_plus: 0.5

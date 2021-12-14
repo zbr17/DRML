@@ -1,0 +1,54 @@
+name,type,default,help,proxy_anchor,proxy_anchor_drml,margin
+"""--dataset""",str,"""cub200""","""global setting""",,,
+"""--model""",str,"""bninception""","""global setting""",,,
+"""--save_name""",str,"""TEST""","""global setting""",,,
+"""--warm_up""",int,0,"""global setting""",,,
+"""--warm_up_list""",str,"[""embedder""]","""global setting""",,,
+"""--seed""",int,None,"""global setting""",,,
+"""--not_deterministic""","""store_false""",True,"""global setting""",,,
+"""--not_benchmark""","""store_false""",True,"""global setting""",,,
+"""--phase""",str,"""train""","""global setting""",,,
+"""--not_test""","""store_false""",True,"""global setting""",,,
+"""--not_save""","""store_false""",True,"""global setting""",,,
+"""--machine_size""",int,1,"""global setting""",,,
+"""--machine_rank""",int,0,"""global setting""",,,
+"""--dist_backend""",str,"""nccl""","""global setting""",,,
+"""--dist_url""",str,"""tcp://localhost:23456""","""managers""","[""managers/default-dist_url""]","[""managers/default-dist_url""]","[""managers/default-dist_url""]"
+"""--device""",int,[0],"""managers""","[""managers/default-device""]","[""managers/default-device""]","[""managers/default-device""]"
+"""--device_type""",str,"""DDP""","""managers""","[""managers/default-device_wrapper_type""]","[""managers/default-device_wrapper_type""]","[""managers/default-device_wrapper_type""]"
+"""--is_resume""","""store_true""",False,"""managers""","[""managers/default-is_resume"", ""recorders/default-is_resume""]","[""managers/default-is_resume"", ""recorders/default-is_resume""]","[""managers/default-is_resume"", ""recorders/default-is_resume""]"
+"""--to_device_list""",str,"[""models""]","""managers""","[""managers/default-to_device_list""]","[""managers/default-to_device_list""]","[""managers/default-to_device_list""]"
+"""--to_wrap_list""",str,[],"""managers""","[""managers/default-to_wrap_list""]","[""managers/default-to_wrap_list""]","[""managers/default-to_wrap_list""]"
+"""--is_distributed""","""store_true""",False,"""managers, recorders, trainers, testers, samplers""","[""managers/default-is_distributed"", ""recorders/default-is_distributed"", ""trainers/default-is_distributed"", ""testers/default-is_distributed""]","[""managers/default-is_distributed"", ""recorders/default-is_distributed"", ""trainers/default-is_distributed"", ""testers/default-is_distributed""]","[""managers/default-is_distributed"", ""recorders/default-is_distributed"", ""trainers/default-is_distributed"", ""testers/default-is_distributed"", ""samplers/train-is_distributed""]"
+"""--delete_old""","""store_true""",False,"""recorders""","[""recorders/default-delete_old_folder""]","[""recorders/default-delete_old_folder""]","[""recorders/default-delete_old_folder""]"
+"""--save_path""",str,"""required""","""recorders""","[""recorders/default-root""]","[""recorders/default-root""]","[""recorders/default-root""]"
+"""--use_wandb""","""store_true""",False,"""recorders""","[""recorders/default-use_wandb""]","[""recorders/default-use_wandb""]","[""recorders/default-use_wandb""]"
+"""--k_list""",int,"[1, 2, 4, 8]","""evaluators""","[""evaluators/default-k_list""]","[""evaluators/default-k_list""]","[""evaluators/default-k_list""]"
+"""--eval_exclude""",str,[],"""evaluators""","[""evaluators/default-exclude""]","[""evaluators/default-exclude""]","[""evaluators/default-exclude""]"
+"""--data_path""",str,"""required""","""datasets""","[""datasets/train-root"", ""datasets/test-root""]","[""datasets/train-root"", ""datasets/test-root""]","[""datasets/train-root"", ""datasets/test-root""]"
+"""--num_workers""",int,8,"""trainers, testers""","[""trainers/default-dataset_num_workers"", ""testers/default-dataset_num_workers""]","[""trainers/default-dataset_num_workers"", ""testers/default-dataset_num_workers""]","[""trainers/default-dataset_num_workers"", ""testers/default-dataset_num_workers""]"
+"""--batch_size""",int,32,"""trainers, samplers""","[""trainers/default-batch_size""]","[""trainers/default-batch_size""]","[""trainers/default-batch_size"", ""samplers/train-batch_size""]"
+"""--test_batch_size""",int,32,"""testers""","[""testers/default-batch_size""]","[""testers/default-batch_size""]","[""testers/default-batch_size""]"
+"""--splits_to_eval""",str,"[""test"", ""train""]","""testers""","[""testers/default-splits_to_eval""]","[""testers/default-splits_to_eval""]","[""testers/default-splits_to_eval""]"
+"""--lr_trunk""",float,0.00001,"""optimizers""","[""optimizers/trunk-lr""]","[""optimizers/trunk-lr""]","[""optimizers/trunk-lr""]"
+"""--lr_embedder""",float,0.0001,"""optimizers""","[""optimizers/embedder-lr""]","[""optimizers/embedder-lr""]","[""optimizers/embedder-lr""]"
+"""--lr_collector""",float,0.0001,"""optimizers""","[""optimizers/collector-lr""]","[""optimizers/ensemble-lr"", ""optimizers/repre-lr""]",
+"""--lr_loss""",float,0.01,"""optimizers""",,,"[""optimizers/loss-lr""]"
+"""--wd""",float,1e-4,"""optimizers""","[""optimizers/trunk-weight_decay"", ""optimizers/embedder-weight_decay"", ""optimizers/collector-weight_decay""]","[""optimizers/trunk-weight_decay"", ""optimizers/embedder-weight_decay"", ""optimizers/ensemble-weight_decay"", ""optimizers/repre-weight_decay""]","[""optimizers/trunk-weight_decay"", ""optimizers/embedder-weight_decay"", ""optimizers/loss-weight_decay""]"
+"""--step""",int,10,"""schedulers""","[""schedulers/trunk-step_size"", ""schedulers/embedder-step_size"", ""schedulers/collector-step_size""]","[""schedulers/trunk-step_size"", ""schedulers/embedder-step_size"", ""schedulers/ensemble-step_size"", ""schedulers/repre-step_size""]","[""schedulers/trunk-step_size"", ""schedulers/embedder-step_size"", ""schedulers/loss-step_size""]"
+"""--gamma""",float,0.5,"""schedulers""","[""schedulers/trunk-gamma"", ""schedulers/embedder-gamma"", ""schedulers/collector-gamma""]","[""schedulers/trunk-gamma"", ""schedulers/embedder-gamma"", ""schedulers/ensemble-gamma"", ""schedulers/repre-gamma""]","[""schedulers/trunk-gamma"", ""schedulers/embedder-gamma"", ""schedulers/loss-gamma""]"
+"""--T_max""",int,200,"""schedulers: CosineAnnealing""",,,
+"""--moco_t""",float,0.7,"""collectors: MoCo-v2""",,,
+"""--hardneg_cutoff""",float,0.5,"""selectors""",,,
+"""--margin_alpha""",float,0.2,"""losses""",,,"[""losses/loss-alpha""]"
+"""--margin_beta""",float,1.2,"""losses""",,,"[""losses/loss-beta""]"
+"""--proxyanchor_margin""",float,0.1,"""losses""","[""losses/loss-margin""]","[""losses/loss1-margin"", ""losses/loss2-margin"", ""losses/loss3-margin"", ""losses/loss4-margin"", ""losses/loss-margin""]",
+"""--proxyanchor_alpha""",float,32,"""losses""","[""losses/loss-alpha""]","[""losses/loss1-alpha"", ""losses/loss2-alpha"", ""losses/loss3-alpha"", ""losses/loss4-alpha"", ""losses/loss-alpha""]",
+"""--features_dim""",int,1024,"""collectors: DRML not used!""",,,
+"""--num_classes""",int,100,"""losses, collectors: DRML""","[""collectors/collector-num_classes""]","[""collectors/ensemble-num_classes"", ""collectors/repre-num_classes""]","[""losses/loss-num_classes""]"
+"""--embeddings_dim""",int,512,"""models, collectors: DRML""","[""models/embedder-output_dim"", ""collectors/collector-embeddings_dim""]",,"[""models/embedder-output_dim""]"
+"""--branch_num""",int,4,"""models: DRML""",,"[""models/embedder-embedder_group"", ""collectors/ensemble-proxy_group""]",
+"""--weight_repre_loss""",float,1.0,"""models: DRML""",,"[""models/embedder-weight_repre_loss""]",
+"""--weight_recon_loss""",float,1.0,"""models: DRML""",,"[""models/embedder-weight_recon_loss""]",
+"""--input_size""",int,256,"""models: DRML""",,"[""models/embedder-input_size""]",
+"""--hidden_embeddings_size""",int,128,"""models: DRML""",,"[""models/embedder-embedding_size"", ""collectors/ensemble-embedding_size""]",

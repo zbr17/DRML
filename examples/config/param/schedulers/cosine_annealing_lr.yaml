@@ -1,0 +1,5 @@
+CosineAnnealingLR:
+  optimizer: [~~_SEARCH_WITH_SAME_NAME_, optimizers, null]
+  T_max: 200
+  eta_min: 0
+  last_epoch: -1

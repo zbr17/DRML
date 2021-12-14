@@ -1,4 +1,0 @@
-MetricFactory:
-  params:
-    is_normalize: false
-    metric_name: CosineMetric

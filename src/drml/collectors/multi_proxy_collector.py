@@ -45,7 +45,7 @@ class MultiProxyCollector(BaseCollector):
         proxy_labels = torch.arange(self.num_classes)
         self.register_buffer("labels", proxy_labels)
     
-    def forward(self, data, embeddings: dict, labels: dict) -> torch.Tensor:
+    def forward(self, embeddings: dict, labels: dict) -> torch.Tensor:
         assert isinstance(embeddings, (dict, list))
         assert isinstance(labels, (dict, list))
 

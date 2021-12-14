@@ -1,0 +1,3 @@
+gradclipper:
+  parameters: [~~_SEARCH_WITH_SAME_NAME_, losses, null]
+  max_norm: 10

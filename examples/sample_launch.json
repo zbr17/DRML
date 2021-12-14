@@ -1,0 +1,66 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "margin loss - cub200",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "args": [
+                "--data_path", "${env:WORKSPACE}/datasets",
+                "--save_path", "${env:WORKSPACE}/exp/DRML",
+                "--device", "0", "--batch_size", "180", "--test_batch_size", "180",
+                "--setting", "margin", "--embeddings_dim", "512",
+                "--margin_alpha", "1", "--margin_beta", "0.5", "--num_classes", "100",
+                "--lr_trunk", "0.00003", "--lr_embedder", "0.0003", "--lr_loss", "0.01",
+                "--dataset", "cub200", "--delete_old"
+            ]
+        },
+        {
+            "name": "proxy anchor loss - cub200",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "args": [
+                "--data_path", "${env:WORKSPACE}/datasets",
+                "--save_path", "${env:WORKSPACE}/exp/DRML",
+                "--device", "0", "--batch_size", "180", "--test_batch_size", "180",
+                "--setting", "proxy_anchor", "--embeddings_dim", "512",                
+                "--proxyanchor_margin", "0.1", "--proxyanchor_alpha", "32", "--num_classes", "100",
+                "--wd", "0.0001", "--gamma", "0.5", "--step", "10",
+                "--lr_trunk", "0.0001", "--lr_embedder", "0.0001", "--lr_collector", "0.01",
+                "--dataset", "cub200", "--delete_old",
+                "--warm_up", "1", "--warm_up_list", "embedder", "collector"
+            ]
+        },
+        {
+            "name": "proxy anchor loss - cars196",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "args": [
+                "--data_path", "${env:WORKSPACE}/datasets",
+                "--save_path", "${env:WORKSPACE}/exp/DRML",
+                "--device", "0", "--batch_size", "180", "--test_batch_size", "180",
+                "--setting", "proxy_anchor", "--embeddings_dim", "512",                
+                "--proxyanchor_margin", "0.1", "--proxyanchor_alpha", "32", "--num_classes", "98",
+                "--wd", "0.0001", "--gamma", "0.5", "--step", "10",
+                "--lr_trunk", "0.0001", "--lr_embedder", "0.0001", "--lr_collector", "0.01",
+                "--dataset", "cars196", "--delete_old",
+                "--warm_up", "1", "--warm_up_list", "embedder", "collector"
+            ]
+        }
+    ]
+}

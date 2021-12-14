@@ -1,4 +1,0 @@
-LiftedStructureLoss:
-  params:
-    neg_margin: 1
-    pos_margin: 0

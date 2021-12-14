@@ -1,0 +1,3 @@
+MLP:
+  layer_size_list: [1024, 100]
+  first_relu: false

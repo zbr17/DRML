@@ -1,0 +1,3 @@
+Adam:
+  params: [~~_SEARCH_WITH_SAME_NAME_, collectors, null]
+  lr: 0.001

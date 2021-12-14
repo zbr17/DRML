@@ -1,0 +1,3 @@
+googlenet:
+  pretrained: True
+  INITIATE: delete_last_linear

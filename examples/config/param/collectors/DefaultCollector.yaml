@@ -1,0 +1,2 @@
+DefaultCollector:
+  metric: [~~_SEARCH_WITH_TARGET_NAME_, metrics, default]

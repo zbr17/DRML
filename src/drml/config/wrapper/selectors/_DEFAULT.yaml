@@ -1,9 +1,0 @@
-input: [metric_mat, row_labels, col_labels, is_same_source]
-map:
-  losses//:
-    metric_mat: 0
-    row_labels: 1
-    col_labels: 2
-    is_same_source: 3
-    indices_tuple: 4
-    weight: 5

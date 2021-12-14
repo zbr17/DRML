@@ -1,0 +1,11 @@
+DVMLCollector:
+  metric: [~~_SEARCH_WITH_TARGET_NAME_, metrics, default]
+  embedder_mean: [~~_SEARCH_WITH_TARGET_NAME_, models, embedder_mean]
+  embedder_std: [~~_SEARCH_WITH_TARGET_NAME_, models, embedder_std]
+  decoder: [~~_SEARCH_WITH_TARGET_NAME_, models, decoder]
+  T: 20
+  phase: 1
+  lambda_1: 1.0
+  lambda_2: 1.0
+  lambda_3: 0.1
+  lambda_4: 1.0

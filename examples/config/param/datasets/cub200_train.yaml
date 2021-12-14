@@ -1,0 +1,4 @@
+CUB200:
+  root: <WORKSPACE>/datasets
+  phase: train
+  transform: [~~_SEARCH_WITH_SAME_NAME_, transforms, null]

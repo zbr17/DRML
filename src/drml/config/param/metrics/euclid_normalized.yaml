@@ -1,4 +1,0 @@
-MetricFactory:
-  params:
-    is_normalize: true
-    metric_name: LpMetric

@@ -1,0 +1,5 @@
+MultiEmbedder:
+  embedding_size: 128
+  input_size: 256
+  embedder_group: 4
+  div_gamma: 1

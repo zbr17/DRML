@@ -1,0 +1,3 @@
+LargeMarginSoftmaxLoss: 
+  margin: 4
+  scale: 1

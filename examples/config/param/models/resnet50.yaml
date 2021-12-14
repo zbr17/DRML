@@ -1,0 +1,4 @@
+resnet50:
+  pretrained: true
+  WRAPPER: 
+    OneStream: {}

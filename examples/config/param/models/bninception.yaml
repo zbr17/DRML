@@ -1,0 +1,6 @@
+bninception:
+  pretrained: imagenet
+  bn_freeze: true
+  INITIATE: delete_last_linear
+  WRAPPER: 
+    OneStream: {}

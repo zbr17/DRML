@@ -1,6 +1,0 @@
-BaseTester: 
-  params:
-    batch_size: 120
-    is_normalize: true
-    dataset_num_workers: 8
-    splits_to_eval: ["train", "test"]

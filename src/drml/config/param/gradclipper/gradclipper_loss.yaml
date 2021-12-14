@@ -1,7 +1,0 @@
-gradclipper:
-  params:
-    parameters:
-      - ~~_SEARCH_WITH_SAME_NAME_
-      - losses
-      - none
-    max_norm: 10

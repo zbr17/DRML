@@ -1,0 +1,8 @@
+DAMLCollector:
+  metric: [~~_SEARCH_WITH_TARGET_NAME_, metrics, default]
+  embedder: [~~_SEARCH_WITH_TARGET_NAME_, models, embedder]
+  generator: [~~_SEARCH_WITH_TARGET_NAME_, models, generator]
+  lambda_0: 1
+  lambda_1: 1
+  lambda_2: 50
+  alpha: 1

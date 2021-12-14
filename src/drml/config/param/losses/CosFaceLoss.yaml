@@ -1,4 +1,0 @@
-CosFaceLoss:
-  params:
-    margin: 0.35
-    scale: 64

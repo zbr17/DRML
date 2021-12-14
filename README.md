@@ -1,6 +1,10 @@
 # Deep Relational Metric Learning
 
-This repository is the official PyTorch implementation of **Deep Relational Metric Learning** built on [GeDML](https://github.com/zbr17/GeDML).
+This repository is the official PyTorch implementation of **Deep Relational Metric Learning**. 
+
+## News
+
+- \[2021-12-14\]: Update gedml to the newest version 2.0.1.
 
 ## Framework
 
@@ -65,31 +69,7 @@ pip install -r requirements.txt
 To train the baseline model with the ProxyAnchor loss on CUB200, run this command:
 
 ```train
-CUDA_VISIBLE_DEVICES=0 python examples/train/main.py \
---save_name <experiment-name> \
---data_path <path-of-data> \
---phase train \
---device 0 \
---setting proxy_baseline \
---dataset cub200 \
---num_classes 100 \
---batch_size 120 \
---delete_old
-```
-
-To train the baseline model with the ProxyAnchor loss on Cars196, run this command:
-
-```train
-CUDA_VISIBLE_DEVICES=0 python examples/train/main.py \
---save_name <experiment-name> \
---data_path <path-of-data> \
---phase train \
---device 0 \
---setting proxy_baseline \
---dataset cars196 \
---num_classes 98 \
---batch_size 120 \
---delete_old
+CUDA_VISIBLE_DEVICES=0 python examples/demo.py --data_path /home/zbr/Workspace/datasets --save_path /home/zbr/Workspace/exp/DRML --device 0 --batch_size 180 --test_batch_size 180 --setting proxy_anchor --embeddings_dim 512 --proxyanchor_margin 0.1 --proxyanchor_alpha 32 --num_classes 100 --wd 0.0001 --gamma 0.5 --step 10 --lr_trunk 0.0001 --lr_embedder 0.0001 --lr_collector 0.01 --dataset cub200 --delete_old --warm_up 1 --warm_up_list embedder collector 
 ```
 
 ### DRML models
@@ -97,31 +77,7 @@ CUDA_VISIBLE_DEVICES=0 python examples/train/main.py \
 To train the proposed DRML model using the ProxyAnchor loss on CUB200 in the paper, run this command:
 
 ```train
-CUDA_VISIBLE_DEVICES=0 python examples/train/main.py \
---save_name <experiment-name> \
---data_path <path-of-data> \
---phase train \
---device 0 \
---setting proxy \
---dataset cub200 \
---num_classes 100 \
---batch_size 120 \
---delete_old
-```
-
-To train the proposed DRML model using the ProxyAnchor loss on Cars196 in the paper, run this command:
-
-```train
-CUDA_VISIBLE_DEVICES=0 python examples/train/main.py \
---save_name <experiment-name> \
---data_path <path-of-data> \
---phase train \
---device 0 \
---setting proxy \
---dataset cars196 \
---num_classes 98 \
---batch_size 120 \
---delete_old
+CUDA_VISIBLE_DEVICES=0 python examples/demo.py --data_path /home/zbr/Workspace/datasets --save_path /home/zbr/Workspace/exp/DRML --device 0 --batch_size 180 --test_batch_size 180 --setting proxy_anchor_drml --embeddings_dim 512 --features_dim 1024 --branch_num 4 --proxyanchor_margin 0.2 --proxyanchor_alpha 64 --num_classes 100 --wd 0.0001 --gamma 0.5 --step 10 --lr_trunk 0.00005 --lr_embedder 0.001 --lr_collector 0.01 --weight_recon_loss 1 --weight_repre_loss 10 --dataset cub200 --delete_old --warm_up 1 --warm_up_list embedder ensemble repre 
 ```
 
 ## Device 
@@ -147,4 +103,3 @@ Our models achieve the following performances:
 ## COMING SOON
 
 - [ ] We will upload the code for cross-validation setting soon.
-- [ ] We will update the optimal hyper-parameters of the experiments soon.

@@ -1,6 +1,0 @@
-RelationEmbedder:
-  params:
-    embedding_size: 128
-    input_size: 1024
-    embedder_group: 4
-    div_gamma: 1

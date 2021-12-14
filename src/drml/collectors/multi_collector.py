@@ -14,7 +14,7 @@ class MultiCollector(BaseCollector):
         super(MultiCollector, self).__init__(*args, **kwargs)
         self.proxy_group = proxy_group
     
-    def forward(self, data, embeddings: dict, labels: dict) -> torch.Tensor:
+    def forward(self, embeddings: dict, labels: dict) -> torch.Tensor:
         assert isinstance(embeddings, (dict, list))
         assert isinstance(labels, (dict, list))
 

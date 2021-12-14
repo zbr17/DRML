@@ -1,0 +1,4 @@
+DistanceWeightedSelector:
+  lower_cutoff: 0.5
+  upper_cutoff: 1.4
+  embedding_dim: 512

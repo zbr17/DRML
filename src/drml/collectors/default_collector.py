@@ -7,7 +7,7 @@ class DefaultCollector(BaseCollector):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def forward(self, data, embeddings, labels) -> tuple:
+    def forward(self, embeddings, labels) -> tuple:
         """
         Do nothing. Copy embeddings as proxies and copy labels as proxies labels.
         """

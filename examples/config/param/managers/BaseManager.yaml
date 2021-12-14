@@ -1,0 +1,9 @@
+BaseManager:
+  trainer: [~~_SEARCH_WITH_TARGET_NAME_, trainers, default]
+  tester: [~~_SEARCH_WITH_TARGET_NAME_, testers, default]
+  recorder: [~~_SEARCH_WITH_TARGET_NAME_, recorders, default]
+  objects_dict: [~~_PASS_WITH_NAMED_MEMBER_, null, objects_dict]
+  device: [0]
+  is_resume: true
+  is_distributed: false
+  device_wrapper_type: DP

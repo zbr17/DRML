@@ -1,0 +1,6 @@
+SoftTripleLoss:
+  centers_per_class: 10
+  num_classes: 100
+  la: 20
+  gamma: 0.1
+  margin: 0.01

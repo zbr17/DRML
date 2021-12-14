@@ -1,0 +1,22 @@
+GlobalProxyCollector:
+  metric: [~~_SEARCH_WITH_TARGET_NAME_, metrics, default]
+  optimizer_name: Adam
+  optimizer_param: 
+    lr: 0.001
+  dataloader_param:
+    batch_size: 120
+    drop_last: false
+    shuffle: true
+    num_workers: 8
+  max_iter: 50000
+  error_bound: 0.01
+  total_patience: 10
+  auth_weight: 1.0
+  repre_weight: 5.0
+  disc_weight: 0.4
+  disc_gamma: 0.1
+  disc_margin: 0.3
+  disc_la: 20
+  num_classes: 100
+  embeddings_dim: 512
+  centers_per_class: 10

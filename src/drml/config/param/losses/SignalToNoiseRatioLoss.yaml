@@ -1,4 +1,0 @@
-SignalToNoiseRatioLoss:
-  params:
-    pos_margin: 0.0
-    neg_margin: 1.0
