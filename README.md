@@ -103,3 +103,16 @@ Our models achieve the following performances:
 ## COMING SOON
 
 - [ ] We will upload the code for cross-validation setting soon.
+
+## Citation
+
+If you find our work useful in your research, please consider citing:
+```
+@inproceedings{zheng2021deep,
+  title={Deep Relational Metric Learning},
+  author={Zheng, Wenzhao and Zhang, Borui and Lu, Jiwen and Zhou, Jie},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={12065--12074},
+  year={2021}
+}
+```
